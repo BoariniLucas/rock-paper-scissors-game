@@ -23,15 +23,15 @@ Com o desenvolvimento desse projeto consegui aprender mais sobre como manipular 
 
 ### Screenshot
 
->Abaixo estou deixando um screenshot do design final do projeto conforme desenvolvi:
+<!--Abaixo estou deixando um screenshot do design final do projeto conforme desenvolvi: **-->
 
->![Imagem do meu resultado do projeto](./design/my-solution.jpg)
+<!--![Imagem do meu resultado do projeto](./design/my-solution.jpg)-->
 
 ### Link
 
->Estou deixando abaixo o link com o deploy do projeto para visualização direto no navegador:
+<!--Estou deixando abaixo o link com o deploy do projeto para visualização direto no navegador:-->
 
->- Para acessar o App clique [aqui](https://calculator-app-main-lake.vercel.app/)
+<!--    - Para acessar o App clique [aqui](https://calculator-app-main-lake.vercel.app/)-->
 
 ### Construido com
 
