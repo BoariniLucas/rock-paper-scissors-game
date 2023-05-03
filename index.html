@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+        
     <title>Rock, Paper, Scissors</title>
-
+<!--
     Score
     Rules
 
@@ -17,10 +22,55 @@
     You Win
     You Lose
 
-    Play Again
+    Play Again-->
 
   </head>
   <body>
+
+    <header>
+      <div class="header-container">
+        <h1 class="title">
+          rock
+          paper
+          scissors
+        </h1>
+
+        <div class="score">
+          <a>score</a>
+          
+          <h2 class="score-number">0</h2>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+
+      <svg width="313" height="278" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#000" stroke-width="15" fill="none" opacity=".2" d="M156.5 262 300 8H13z"/>
+      </svg>
+
+      <div id="paper" class="game-choice paper">
+        <img src="./assets/images/icon-paper.svg">
+      </div>
+
+      <div id="scissors" class="game-choice scissors">
+        <img src="./assets/images/icon-scissors.svg">
+      </div>
+
+      <div id="rock" class="game-choice rock">
+        <img src="./assets/images/icon-rock.svg">
+      </div>
+      
+
+    </section>
+
+    <button class="button-rules">rules</button>
+
+    <footer>
+      <div class="attribution"> 
+        <a href="https://github.com/BoariniLucas" target="_blank">Coded by Lucas Boarini</a>
+      </div>   
+    </footer>
 
 
     <!--
