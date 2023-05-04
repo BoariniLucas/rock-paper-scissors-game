@@ -16,8 +16,9 @@ Decidi realizar um jogo nesse projeto, o jogo é o pedra papel tesoura, um jogo 
 
 Com o desenvolvimento desse projeto consegui aprender mais sobre como manipular dados com o JavaScript, e aprimorar também minhas habilidades com o Flexbox no CSS. Eesse projeto realizando as seguintes etapas:
 
-- [ ] Montar estrutura básica do jogo;
-- [ ] Criar página das regras;
+- [X] Montar estrutura básica do jogo;
+- [X] Criar página das regras;
+- [ ] Desenvolver página de resultado do jogo;
 - [ ] Criar funções para computador escolher jogada;
 - [ ] Desenvolver tela de fim do jogo;
 

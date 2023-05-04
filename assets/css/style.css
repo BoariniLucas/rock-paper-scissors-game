@@ -16,6 +16,7 @@
     --scissorsBorder: #eca823;
     --rockBorder: #df405e;
     --buttonRulerBorderColor: #888ba4;
+    --rulesBg: #000000b7;
 }
 
 
@@ -36,7 +37,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: end;
-    height: 12em;
+    height: 10em;
     width: 100%;
 }
 
@@ -51,7 +52,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 9.5em;
+    height: 8.5em;
     width: 40em;
     border: solid var(--scoreBorderColor);
     border-radius: 15px;
@@ -59,20 +60,12 @@ footer {
     box-sizing: border-box;
 }
 
-.title {
-    font-weight: bold;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    width: 160px;
-    color: var(--whiteColor);
-}
-
 .score {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 7em;
-    width: 8.5em;
+    height: 6em;
+    width: 7.5em;
     padding: 1em;
     border-radius: 15px;
     box-sizing: border-box;
@@ -86,7 +79,7 @@ footer {
 }
 
 .score-number {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     color: var(--scoreNumberColor);
 }
@@ -138,6 +131,48 @@ footer {
     border: solid var(--rockBorder);
     border-width: 1em;
     margin-top: 24em;
+}
+
+.rules-page {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22em;
+    width: 20em;
+    border-radius: 15px;
+    padding: 1.5em 2.5em;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1000px 200px var(--rulesBg);
+    background-color: var(--whiteColor);
+}
+
+.rules-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2em;
+    width: 100%;
+}
+
+.rules-title h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--scoreNumberColor);
+}
+
+.rules-title img:hover {
+    cursor: pointer;
 }
 
 .button-rules {
