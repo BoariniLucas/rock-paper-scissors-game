@@ -17,6 +17,8 @@
     --rockBorder: #df405e;
     --buttonRulerBorderColor: #888ba4;
     --rulesBg: #000000b7;
+    --bgHousePickedColor: #17223e;
+    --btnPlayAgainColor: #f9f9f9;
 }
 
 
@@ -85,10 +87,11 @@ footer {
 }
 
 .container {
+    visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20em;
+    height: 22em;
     width: 30em;
     margin-top: 2em;
 }
@@ -131,6 +134,95 @@ footer {
     border: solid var(--rockBorder);
     border-width: 1em;
     margin-top: 24em;
+}
+
+.result-game {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 22em;
+    width: 36em;
+    margin-top: 12.2em;
+}
+
+.picked-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 14em;
+    width: 11.5em;
+}
+
+.picked-conteiner h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    color: var(--whiteColor);
+}
+
+.user-picked {
+    position: relative;
+    margin-left: 0em;
+    margin-top: 0em;
+    margin: 0 1em;
+}
+
+.result {
+    display: flex;  /*display: flex*/
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+    width: 10.5em;
+    margin: 2em 1em 0;
+}
+
+.result span {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--whiteColor);
+}
+
+.result button {
+    font-family: var(--principalFont);
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 2.5em;
+    width: 12.5em;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: none;
+    color: var(--scoreNumberColor);
+    background-color: var(--btnPlayAgainColor);
+}
+
+.bg-house-picked {
+    position: absolute;
+    visibility: hidden;
+    display: block;
+    height: 6.8em;
+    width: 7.1em;
+    border-radius: 100%;
+    margin: 5em 2em;
+    background-color: var(--bgHousePickedColor);
+}
+
+.house-picked {
+    visibility: visible;
+    display: flex;
+    position: relative;
+    margin-left: 0em;
+    margin-top: 0em;
+    margin: 0 1em;
+}
+
+.winner {
+    box-shadow: 1px 1px 10000px 2px var(--whiteColor);
 }
 
 .rules-page {

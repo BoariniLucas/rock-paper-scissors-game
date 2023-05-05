@@ -18,7 +18,7 @@ Com o desenvolvimento desse projeto consegui aprender mais sobre como manipular 
 
 - [X] Montar estrutura básica do jogo;
 - [X] Criar página das regras;
-- [ ] Desenvolver página de resultado do jogo;
+- [X] Desenvolver estrutura da página de resultado do jogo;
 - [ ] Criar funções para computador escolher jogada;
 - [ ] Desenvolver tela de fim do jogo;
 
