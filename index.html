@@ -39,22 +39,25 @@
       </div>
     </header>
 
-    <section class="container">
+    <section class="pick-page">
+
+      <!--Triangule image-->
       <svg width="313" height="278" xmlns="http://www.w3.org/2000/svg">
         <path stroke="#000" stroke-width="15" fill="none" opacity=".2" d="M156.5 262 300 8H13z"/>
       </svg>
 
-      <div id="paper" class="game-choice paper">
+      <div id="btn-paper" class="game-choice paper" value="paper">
         <img src="./assets/images/icon-paper.svg">
       </div>
 
-      <div id="scissors" class="game-choice scissors">
+      <div id="btn-scissors" class="game-choice scissors" value="scissors">
         <img src="./assets/images/icon-scissors.svg">
       </div>
 
-      <div id="rock" class="game-choice rock">
+      <div id="btn-rock" class="game-choice rock" value="rock">
         <img src="./assets/images/icon-rock.svg">
       </div>  
+
     </section>
 
     <section class="rules-page">
@@ -70,11 +73,12 @@
       </div>
     </section>
 
-    <section class="result-game">
-      <div class="picked-conteiner">
+    <section id="result-game" class="result-game">
+
+      <div class="picked-container">
         <h2>you picked</h2>
-        <div id="scissors" class="game-choice scissors user-picked">
-          <img src="./assets/images/icon-scissors.svg">
+        <div id="user-pick" class="game-choice user-picked">
+          <img id="user-pick-img" src="">
         </div>
       </div>
       
@@ -85,14 +89,13 @@
         <button class="btn-play-again">play again</button>
       </div>
 
-      <div class="picked-conteiner">
+      <div class="picked-container">
         <h2>the house picked</h2>
         <div class="bg-house-picked"></div>
-
-      <div id="rock" class="game-choice rock house-picked">
-        <img src="./assets/images/icon-rock.svg">
-      </div> 
-
+        
+        <div id="house-pick" class="game-choice house-picked">
+          <img id="house-pick-img" src="">
+        </div> 
       </div>
       
       

@@ -86,8 +86,8 @@ footer {
     color: var(--scoreNumberColor);
 }
 
-.container {
-    visibility: hidden;
+.pick-page {
+    visibility: visible;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +137,7 @@ footer {
 }
 
 .result-game {
-    visibility: visible;
+    visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +147,7 @@ footer {
     margin-top: 12.2em;
 }
 
-.picked-conteiner {
+.picked-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -156,7 +156,7 @@ footer {
     width: 11.5em;
 }
 
-.picked-conteiner h2 {
+.picked-container h2 {
     font-weight: bold;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -172,7 +172,7 @@ footer {
 }
 
 .result {
-    display: flex;  /*display: flex*/
+    display: none;  /*display: flex*/
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -203,7 +203,6 @@ footer {
 
 .bg-house-picked {
     position: absolute;
-    visibility: hidden;
     display: block;
     height: 6.8em;
     width: 7.1em;
@@ -213,7 +212,6 @@ footer {
 }
 
 .house-picked {
-    visibility: visible;
     display: flex;
     position: relative;
     margin-left: 0em;
