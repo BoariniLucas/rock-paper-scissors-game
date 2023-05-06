@@ -12,10 +12,9 @@ const userPickImg = document.querySelector('#user-pick-img');
 const housePick = document.querySelector('#house-pick');
 const housePickImg = document.querySelector('#house-pick-img');
 
-
-
-
 const pgResultClass = document.querySelector('.result-game');
+
+let housePickArr = ['paper', 'scissors', "rock"];
 
 
 
@@ -27,7 +26,7 @@ btnPaper.addEventListener('click', () => {
 
     userPickLoad('paper', './assets/images/icon-paper.svg');
 
-    console.log("Paper");
+    housePickRandon();
 });
 
 btnScissors.addEventListener('click', () => {
@@ -70,11 +69,9 @@ btnCloseRules.addEventListener('click', () => {
 
 
 
-housePickLoad('scissors', './assets/images/icon-scissors.svg');
 
-//('paper', './assets/images/icon-paper.svg');
-//('rock', './assets/images/icon-rock.svg');
-//('scissors', './assets/images/icon-scissors.svg');
+
+
 
 
 
@@ -92,3 +89,19 @@ function housePickLoad(pick, url) {
     housePickImg.setAttribute('src', url);
 }
 
+function housePickRandon() {
+
+    let housePick = Math.floor(Math.random() * housePickArr.length);
+
+    if(housePickArr[housePick] == "paper") {
+
+        housePickLoad('paper', './assets/images/icon-paper.svg');
+
+    } else if(housePickArr[housePick] == "rock") {
+
+        housePickLoad('rock', './assets/images/icon-rock.svg');
+
+    } else {
+        housePickLoad('scissors', './assets/images/icon-scissors.svg');
+    }
+}
