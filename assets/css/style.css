@@ -212,6 +212,7 @@ footer {
 }
 
 .house-picked {
+    visibility: hidden;
     display: flex;
     position: relative;
     margin-left: 0em;

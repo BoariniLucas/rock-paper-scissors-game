@@ -22,7 +22,8 @@ Com o desenvolvimento desse projeto consegui aprender mais sobre como manipular 
 - [X] Criar função para carregar escolha do usuários e computador;
 - [X] Desenvolver função para computador sortear uma jogada;
 - [X] Implemtar função e no botões;
-- [ ] Desdenvolver validação da jogada;
+- [X] Desdenvolver validação da jogada;
+- [ ] Realizar desenvolvimento visual do resultado;
 - [ ] Desenvolver tela de fim do jogo;
 
 ### Screenshot
