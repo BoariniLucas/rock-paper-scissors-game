@@ -26,7 +26,7 @@ btnPaper.addEventListener('click', () => {
 
     userPickLoad('paper', './assets/images/icon-paper.svg');
 
-    housePickRandon();
+    
 });
 
 btnScissors.addEventListener('click', () => {
@@ -36,8 +36,7 @@ btnScissors.addEventListener('click', () => {
 
     userPickLoad('scissors', './assets/images/icon-scissors.svg');
 
-    console.log("Scissors");
-
+    housePickRandon();
 });
 
 btnRock.addEventListener('click', () => {
@@ -47,11 +46,8 @@ btnRock.addEventListener('click', () => {
 
     userPickLoad('rock', './assets/images/icon-rock.svg');
 
-    console.log("Rock");
-
+    housePickRandon();
 });
-
-
 
 btnRules.addEventListener('click', () => {
 
@@ -66,8 +62,6 @@ btnCloseRules.addEventListener('click', () => {
 
     rulesClass.style.visibility = "hidden";
 });
-
-
 
 
 
