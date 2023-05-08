@@ -5,7 +5,6 @@ const btnRock = document.querySelector('#btn-rock');
 const btnRules = document.querySelector('#btn-rules');
 const btnCloseRules = document.querySelector('#btn-close-rules');
 
-
 const pgPickClass = document.querySelector('.pick-page');
 const userPick = document.querySelector('#user-pick');
 const userPickImg = document.querySelector('#user-pick-img');
@@ -13,10 +12,15 @@ const housePick = document.querySelector('#house-pick');
 const housePickImg = document.querySelector('#house-pick-img');
 const housePickedClass = document.querySelector('.house-picked');
 
+const resultClass = document.querySelector('.result');
+const resultText = document.querySelector('.result-text');
+const btnPlayAgain = document.querySelector('#btn-play-again');
+
 const pgResultClass = document.querySelector('.result-game');
+const scoreNumber = document.querySelector('.score-number');
 
 let housePickArr = ['paper', 'scissors', "rock"];
-
+let score = 0;
 
 
 /*     -----Events-----     */
@@ -27,7 +31,8 @@ btnPaper.addEventListener('click', () => {
 
     userPickLoad('paper', './assets/images/icon-paper.svg');
 
-    setTimeout(() => {  housePickRandon('paper'); }, 1000);
+    setTimeout(() => { housePickRandon('paper'); }, 1000);
+    setTimeout(() => { showResult(); }, 2000);
 });
 
 btnScissors.addEventListener('click', () => {
@@ -38,6 +43,7 @@ btnScissors.addEventListener('click', () => {
     userPickLoad('scissors', './assets/images/icon-scissors.svg');
 
     setTimeout(() => {  housePickRandon('scissors'); }, 1000);
+    setTimeout(() => { showResult(); }, 2000);
 });
 
 btnRock.addEventListener('click', () => {
@@ -48,6 +54,13 @@ btnRock.addEventListener('click', () => {
     userPickLoad('rock', './assets/images/icon-rock.svg');
 
     setTimeout(() => {  housePickRandon('rock'); }, 1000);
+    setTimeout(() => { showResult(); }, 2000);
+});
+
+btnPlayAgain.addEventListener('click', () => {
+
+    resetGame();
+
 });
 
 btnRules.addEventListener('click', () => {
@@ -63,10 +76,6 @@ btnCloseRules.addEventListener('click', () => {
 
     rulesClass.style.visibility = "hidden";
 });
-
-
-
-
 
 
 
@@ -111,41 +120,73 @@ function housePickRandon(userPick) {
     }
 }
 
+function validationGame(varUserPick, varHousePick) {
 
-/*
-0 - Paper
-1 - Scissor
-2 - Rock
-*/
+    if(varUserPick == varHousePick) {
+        resultText.innerHTML = "try again";       
 
-function validationGame(userPick, housePick) {
+    } else if((varUserPick == 'paper') && (varHousePick == 'rock')) {
 
-    if(userPick == housePick) {
-        console.log("Empate");
+        resultText.innerHTML = "you win";
+        userPick.classList.add('winner');
 
-    } else if((userPick == 'paper') && (housePick == 'rock')) {
+        score += 1;
 
-        console.log("usuário ganha");
+    } else if ((varUserPick == 'paper') && (varHousePick == 'scissors')) {
 
-    } else if ((userPick == 'paper') && (housePick == 'scissors')) {
+        resultText.innerHTML = "you lose";
+        housePick.classList.add('winner');
 
-        console.log("usuário perde");
+    } else if ((varUserPick == 'scissors') && (varHousePick == 'paper')) {
 
-    } else if ((userPick == 'scissors') && (housePick == 'paper')) {
+        resultText.innerHTML = "you win";
+        userPick.classList.add('winner');
 
-        console.log("usuário ganha");
+        score += 1;
 
-    } else if ((userPick == 'scissors') && (housePick == 'rock')) {
+    } else if ((varUserPick == 'scissors') && (varHousePick == 'rock')) {
 
-        console.log("usuário perde");
+        resultText.innerHTML = "you lose";
+        housePick.classList.add('winner');
 
-    } else if ((userPick == 'rock') && (housePick == 'scissors')) {
+    } else if ((varUserPick == 'rock') && (varHousePick == 'scissors')) {
 
-        console.log("usuário ganha");
+        resultText.innerHTML = "you win";
+        userPick.classList.add('winner');
 
-    } else if ((userPick == 'rock') && (housePick == 'paper')) {
+        score += 1;
 
-        console.log("usuário perde");
+    } else if ((varUserPick == 'rock') && (varHousePick == 'paper')) {
 
+        resultText.innerHTML = "you lose";
+        housePick.classList.add('winner');
     }
+
+    scoreNumber.innerHTML = score;
+}
+
+function showResult() {
+
+    resultClass.style.display = "flex";
+}
+
+function resetGame() {
+
+    resultText.innerHTML = "";
+    resultClass.style.display = "none";
+
+    housePick.classList.remove('winner');
+    userPick.classList.remove('winner');
+
+    userPick.classList.remove('paper');
+    userPick.classList.remove('scissors');
+    userPick.classList.remove('rock');
+
+    housePick.classList.remove('paper');
+    housePick.classList.remove('scissors');
+    housePick.classList.remove('rock');
+
+    housePickedClass.style.visibility = "hidden";
+    pgPickClass.style.visibility = "visible";
+    pgResultClass.style.visibility = "hidden"; 
 }
