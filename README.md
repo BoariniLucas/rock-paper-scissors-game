@@ -23,8 +23,10 @@ Com o desenvolvimento desse projeto consegui aprender mais sobre como manipular 
 - [X] Desenvolver função para computador sortear uma jogada;
 - [X] Implemtar função e no botões;
 - [X] Desdenvolver validação da jogada;
-- [ ] Realizar desenvolvimento visual do resultado;
-- [ ] Desenvolver tela de fim do jogo;
+- [X] Realizar desenvolvimento visual do resultado;
+- [X] Desenvolver tela de fim do jogo;
+- [ ] Criar responsividade;
+- [ ] Implementar projeto para salvar placar no localStorage;
 
 ### Screenshot
 
