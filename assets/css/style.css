@@ -116,7 +116,7 @@ footer {
     border: solid var(--paperBorder);
     border-width: 1em;
     margin-top: 13em;
-    margin-left: -14em;
+    margin-left: -13em;
 }
 
 .scissors {
@@ -125,7 +125,7 @@ footer {
     border: solid var(--scissorsBorder);
     border-width: 1em;
     margin-top: 13em;
-    margin-left: 14em;
+    margin-left: 13em;
 }
 
 .rock {
@@ -133,7 +133,7 @@ footer {
     top: 0;
     border: solid var(--rockBorder);
     border-width: 1em;
-    margin-top: 24em;
+    margin-top: 23em;
 }
 
 .result-game {

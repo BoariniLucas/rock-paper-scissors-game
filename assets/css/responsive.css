@@ -1,22 +1,94 @@
 @media screen and (max-width: 375px) {
 
+    header {
+        height: 9em;
+    }
+
+    .header-container {
+        height: 7em;
+        width: 22em;
+    }
+
+    .header-container img {
+        height: 4.5em;
+        width: 7em;
+    }
+
+    .score {
+        height: 5em;
+        width: 6em;
+    }
+
+    .score a {
+        font-size: 0.9em;
+    }
+    
+    .score-number {
+        font-size: 40px;
+    }
+
+    .pick-page {
+        width: 100%;
+    }
+
     .game-choice {
         height: 6.8em;
         width: 7.5em;
     }
 
-    .paper {
-        margin-top: 13em;
-        margin-left: -12em;
+    .result-game {
+        height: 15em;
+        width: 100%;
+        margin-top: 10em;
+    }
+
+    .picked-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 14em;
+        width: 11.5em;
     }
     
-    .scissors {
-        margin-top: 13em;
-        margin-left: 12em;
+    .picked-container h2 {
+        font-size: 1.2em;
+    }
+
+    .bg-house-picked {
+        top: 0;
+        margin: 0;
+        margin-top: 2em;
+    }
+
+    .user-picked {
+        margin-bottom: 2em;
+    }
+
+    .house-picked {
+        margin-bottom: 2em;
+    }
+
+    .result {
+        position: absolute;
+        height: 8em;
+        width: 12em;
+        margin: 0;
+        margin-top: 22em;        
+    }  
+    
+    .result span {
+        font-size: 2.8em;
+        margin-bottom: 0.5em;
     }
     
-    .rock {
-        margin-top: 24em;
+    .result button {
+        font-size: 1.2em;
+        height: 3.2em;
+    }
+
+    .winner {
+        box-shadow: 1px 1px 100px 20px var(--whiteColor);
     }
 
     .button-rules {
@@ -24,10 +96,20 @@
         margin-right: 0;
     }
 
+    .rules-title {
+        flex-direction: column;
+        margin: 4em 0 6em 0;
+    }
+
     .rules {
+        justify-content: start;
         height: 100%;
         width: 100%;
         border-radius: 0;
     }
 
+    .rules-title img {
+        position: absolute;
+        margin-top: 30em;
+    }
 }
