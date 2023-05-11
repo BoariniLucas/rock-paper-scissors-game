@@ -22,6 +22,8 @@ const scoreNumber = document.querySelector('.score-number');
 let housePickArr = ['paper', 'scissors', "rock"];
 let score = 0;
 
+loadPage();
+
 
 /*     -----Events-----     */
 btnPaper.addEventListener('click', () => {    
@@ -163,6 +165,7 @@ function validationGame(varUserPick, varHousePick) {
     }
 
     scoreNumber.innerHTML = score;
+    saveScore();
 }
 
 function showResult() {
@@ -189,4 +192,20 @@ function resetGame() {
     housePickedClass.style.visibility = "hidden";
     pgPickClass.style.visibility = "visible";
     pgResultClass.style.visibility = "hidden"; 
+}
+
+function saveScore() {
+    localStorage.setItem("score", score);
+}
+
+function loadPage() {
+    let scoreLS = localStorage.getItem("score");
+    let scoreConv = JSON.parse(scoreLS);
+
+    if(scoreConv == null) {
+        score = 0;
+    } else {
+        score = scoreConv;
+        scoreNumber.innerHTML = score; 
+    }
 }

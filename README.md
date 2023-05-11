@@ -26,7 +26,7 @@ Com o desenvolvimento desse projeto consegui aprender mais sobre como manipular 
 - [X] Realizar desenvolvimento visual do resultado;
 - [X] Desenvolver tela de fim do jogo;
 - [X] Criar responsividade;
-- [ ] Implementar projeto para salvar placar no localStorage;
+- [X] Implementar projeto para salvar placar no localStorage;
 
 ### Screenshot
 
