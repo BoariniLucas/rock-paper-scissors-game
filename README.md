@@ -30,9 +30,9 @@ Com o desenvolvimento desse projeto consegui aprender mais sobre como manipular 
 
 ### Screenshot
 
-<!--Abaixo estou deixando um screenshot do design final do projeto conforme desenvolvi: **-->
+Abaixo estou deixando um screenshot do design final do projeto conforme desenvolvi:
 
-<!--![Imagem do meu resultado do projeto](./design/my-solution.jpg)-->
+![Imagem do meu resultado do projeto](./design/my-solution.jpg)
 
 ### Link
 
